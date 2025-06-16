@@ -1,23 +1,49 @@
-# RN GitHub Repo Search
+# GitHub Repository Search
 
-Expo (SDK 53+) app for searching GitHub repositories, built with TypeScript
-
-## Folder Structure
-
-```
-/src
-  /components   # Reusable UI components
-  /screens      # App screens/views
-  /hooks        # Custom React hooks
-  /services     # API and data logic
-  /types        # TypeScript type definitions
-  /utils        # Utility functions/helpers
-  /navigation   # Navigation setup
-  /state        # State management (if needed)
-```
+A React Native app for searching GitHub repositories. Built with Expo and TypeScript.
 
 ## Setup
 
-1. Install dependencies: `npm install`
-2. Start the app: `npm start`
+1. Clone and install:
 
+```bash
+git clone https://github.com/your-username/rn-github-repo-search.git
+cd rn-github-repo-search
+npm install
+```
+
+2. Start the app:
+
+```bash
+npm start
+```
+
+## GitHub Token (Recommended)
+
+While the app works without authentication, adding a GitHub token is **highly recommended** to avoid rate limits, secondary rate limts and ensure optimal performance.
+
+## Features
+
+- Search GitHub repositories
+- Infinite scrolling
+- Pull to refresh
+- Repository details
+
+## Tech Stack
+
+- Expo SDK 53+
+- TypeScript
+- Expo Router
+- SWR for data fetching and caching
+- React Native Paper for UI
+- FlashList for performance
+
+## Project Structure
+
+```
+src/
+  app/           # Pages (Expo Router)
+  hooks/         # Custom hooks
+  services/      # API calls
+  utils/         # Helper functions
+```
