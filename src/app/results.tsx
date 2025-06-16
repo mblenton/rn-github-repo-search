@@ -215,6 +215,7 @@ const styles = StyleSheet.create({
   },
   repoItemPressed: {
     backgroundColor: '#f0f0f0',
+    borderRadius: 0,
   },
   repoName: {
     fontWeight: 'bold',
